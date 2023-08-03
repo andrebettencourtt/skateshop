@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.clear{
+    clear: both;
+}
+
+
+.container{
+    max-width: 1400px;/* Largura máxima do container  */
+    padding: 0 2%; /* declarando o preenchimento do container  */
+    margin:  0 auto;/* dando espaçamentos para o container */
+    background-color: black;
+    height: 90px;
+}
+
+
+.logo{
+    position: relative;
+    background-image: url(../img/imglogo.png);
+    background-size: 100% 100%; /* declaranto o preenchimento do logo em seu espaçamento  */
+    width: 150px;
+    height: 70px;
+    float: left;
+    margin-top: 10px;
+}
+
+nav.desktop a{
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    float: right;
+    padding: 30px;
+}
+
+/* Sessões 01 */
+
+.sessao-01 .chamado{
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+}
+
+.lancamentos{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.lancamentos p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+
+/* sessão 02 */
+
+.sessao-02{
+    background-color: white;
+    text-align: center;
+
+}
+
+.produto{
+    display: inline-block;
+    margin: 40px 40px 40px 40px;
+    height: 10%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+    max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    
+}
+
+.produto:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.produto img{
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.produto h2{
+    color: rgb(39, 38, 38);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.produto p{
+    text-align: left;
+    margin: 5px;
+    padding: 0 0 0 10px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.produto input{
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 40px;
+    background-color: gray;
+    cursor: pointer;
+    margin: 7px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    
+}
+
+/* sessão 03 */
+
+.rodape{
+    background-color: black;
+    width: 100%;
+    padding: 30px;
+    margin-top: 5px;
+}
+
+.contato{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.contato a{
+    text-decoration: none;
+}

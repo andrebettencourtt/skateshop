@@ -1,0 +1,457 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100%;
+    max-width: 100%;
+}
+
+header{
+    background-image: url(../img/imgbanner.png);
+    background-size: cover;/* Tamanho do fundo */
+    background-position: center;/* Posição do background */
+    min-height: 550px;/* Altura minima */
+    
+}
+
+.container{
+    max-width: 1400px;/* Largura máxima do container  */
+    padding: 0 2%; /* declarando o preenchimento do container  */
+    margin:  0 auto;/* dando espaçamentos para o container */
+    background-color: black;
+}
+
+
+.logo{
+    position: relative;
+    background-image: url(../img/imglogo.png);
+    background-size: 100% 100%; /* declaranto o preenchimento do logo em seu espaçamento  */
+    width: 150px;
+    height: 70px;
+    float: left;
+    margin-top: 10px;
+}
+
+nav.desktop form{
+    float: right;
+}
+
+nav.desktop{
+    float: right;/* realocando a lista para o lado direito */
+}
+
+
+
+nav.desktop ul{
+    list-style-type: none;/* removendo o estilo original da lista */
+}
+
+nav.desktop li{
+    display: inline-block;/* alinhando os itens das listas */
+    margin: 0 10px;
+    padding: 17px;
+    
+}
+
+nav.desktop a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+
+nav.desktop form{
+    
+    margin-bottom: 10px;
+}
+
+nav.desktop input[type=email]{
+
+    width: 150px;
+    height: 23px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    color: black;
+    border: 2px;
+
+}
+
+nav.desktop input[type=senha]{
+    width: 150px;
+    height: 23px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    color: black;
+    border: 2px;
+}
+
+nav.desktop input[type=email]:focus{outline: 0;}
+
+nav.desktop input[type=senha]:focus{outline: 0;}
+
+nav.desktop input[type=submit]{
+    width: 60px;
+    height: 23px;
+    border-radius: 5px;
+    background-color:lightgrey;
+    cursor: pointer;/* Muda o cursor do mouse quando colocado em cima */
+
+}
+
+nav.mobile{
+    display: none;
+    
+}
+
+nav.mobile ul{
+
+   position: absolute;
+   width: 100%;
+   background-color: lightgray;
+   left: 0;
+   top: 0;
+   text-align: center;
+   padding: 50px 0 30px 0;
+   list-style-type: none;
+   display: none;
+    
+}
+
+nav.mobile li{
+    padding: 5px 0;
+}
+
+nav.mobile a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav.mobile i{
+    position: relative;
+    z-index: 2;
+    padding: 10px 10px 0 0;
+    color: grey;
+    float: right;
+}
+
+
+/* Começando as sessões */
+
+.sessao-01{
+    text-align: center;
+    padding: 30px 0;
+    margin: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.desc-produto{
+    padding: 70px 15px;
+    float: left;
+    width: 60%;
+ 
+}
+
+.clear{
+    clear: both;
+}
+
+.desc-produto h3{
+    color: black;
+    font-size: 25px;
+    
+}
+
+.desc-produto p{
+    margin-top: 20px;
+    color: black;
+    font-size: 17px;
+    line-height: 27px;
+    
+}
+
+.sessao-01 img{
+    width: 30%;
+    float: left;
+    max-width: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Sessão 2 */
+
+.sessao-02 > .container{
+    background-image: url(../img/imgfeedbacknew.png);
+    background-size: cover;
+    position: relative;
+    max-width: 940px;
+    min-height: 340px;
+    
+}
+
+.feedback{
+    position: absolute;
+    left: 50%;
+    width: 70%;
+    background: lightgray;
+    bottom: -30px;
+    max-width: 500px;
+    padding: 45px;
+    box-shadow: 0 9px 20px 0 rgba(17, 17, 17, 0.9);/* Dar sombreamento na caixa */
+}
+
+.feedback p{
+    font-size: 20px;
+    color: black;
+}
+
+/* Sessão 3 */
+
+.sessao-03 .container{
+    background-color: white;
+    margin: 80px 25px 25px 25px;
+    text-align: center;
+
+}
+
+.produto{
+    display: inline-block;
+    margin: 40px 40px 40px 40px;
+    height: 10%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+    max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    
+}
+
+.produto:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.produto img{
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.produto h2{
+    color: rgb(39, 38, 38);
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.produto p{
+    text-align: left;
+    margin: 5px;
+    padding: 0 0 0 10px;
+    font-size: 18px;
+}
+
+.produto input{
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 40px;
+    background-color: gray;
+    cursor: pointer;
+    margin: 7px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    
+}
+
+/* Sessão 4 */
+
+
+.sessao-04 .container{
+    height: 80%;
+    background-color: lightgrey;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.marcas{
+    padding: 30px;
+    text-align: center;
+
+}
+
+.marcas img{
+    border-radius: 6px;
+    width: 23%;
+}
+
+/* sessão 5 */
+
+.sessao-05 .container{
+    background-color: black;
+    width: 100%;
+    padding: 30px;
+    margin-top: 5px;
+}
+
+.contatos{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+
+}
+
+.contatos a{
+    text-decoration: none;
+}
+
+/* detalhe */
+
+.detalhe .container{
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+}
+
+.dt{
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+/* -------------------- Tratando responsividade ----------------------- */
+
+@media screen and (max-width:1024px){/* define a largura do tamanho do mobile, abaixo desse tamanho acontece: */
+    
+    nav.desktop{
+        display: none;/* faz a nav do desktop sumir */
+    }
+
+    nav.mobile{
+        display: block;/* faz a nav do mobile aparecer */
+    }
+
+    nav.mobile form{
+        padding: 20px;
+        
+    }
+
+    .logo{
+
+        margin-right: 50%;
+    }
+    form{
+
+        position: relative;
+        display: inline-block;
+        float: right;
+
+    }
+
+    nav.mobile input[type=email]{
+        display: inline;
+        width: 150px;
+        height: 23px;
+        border-radius: 5px;
+        background-color: lightgrey;
+        color: black;
+        border: 2px;
+    }
+
+    nav.mobile input[type=senha]{
+       
+        width: 150px;
+        height: 23px;
+        border-radius: 5px;
+        background-color: lightgrey;
+        color: black;
+        border: 2px;
+    }
+
+    nav.mobile input[type=submit]{
+
+        position: relative;
+        display: block;
+        margin-left: 245px;
+        margin-top: 10px;
+        border-radius: 5px;
+        background-color:lightgrey;
+        cursor: pointer;
+        width: 60px;
+        height: 23px;
+    }
+
+    
+    .desc-produto{
+        width: 100%;
+        
+    }
+
+    section.sessao-01 img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        max-width: 300px;
+        
+    }
+
+    .feedback{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        
+    }
+
+    .sessao-03{
+        display: flex;
+        justify-content: center;
+    }
+
+    .produto{
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      height: 15%;
+    }
+
+    .sessao-04 .container{
+        height: 50%;
+        background-color: lightgrey;
+        margin: 5%;
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    .marca1{
+        display: none;
+    }
+
+    .marcas img{
+        width: 80%;
+        max-width: 200px;
+        
+    }
+
+
+
+}
+
